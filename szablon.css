@@ -1,0 +1,16 @@
+#tabWrapper{
+    font-size: 20px;
+    color: #6699FF;
+}
+
+table{
+    font-size: 20px;
+}
+
+input {
+    font-size: 18px;
+    color: #6699FF;
+    background-color: #1A1313;
+    border-color: #292121;
+    max-width: 150px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../main.css">
+      <meta name="description" content="Strona ">
+      <meta name="keywords" content="cv, damian, czapski, projekt, programowanie, internetowe">
+      <meta name="author" content="&copy;2016 Damian Czapski">
+      <meta name="copyright" content="(c) 2016 czapskid">
+      <meta name="reply-to"  content="czapskid@ee.pw.edu.pl">
+      <title>Damian Czapski - Programowanie Internetowe</title>
+   </head>
+   <body>
+   		<div id = "caly_blok">
+<div id = "naglowek">
+            Programowanie Internetowe<br>
+            Projekt nr. 2 - część 2.
+         </div>
+
+
+      <div id = "spis_tresci"><ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../o_mnie.html">O mnie</a></li>
+                     <li><a href="../projekt1.html">Projekt 1</a>
+                     <li><a href="../projekt2.html">Projekt 2</a>
+                        <ul>
+                           <li><a href="zad1.html">ZADANIE 1</a></li>
+                           <li><a href="zad2.html">ZADANIE 2</a></li>
+                        </ul></li>
+                     <li>Projekt 3</li>
+                     <li>Projekt 4</li>
+                     <li>Projekt 5</li>
+                     <li><a href = "view-source:http://iem.pw.edu.pl/~czapskid/projekt2/zad2.html">Źródło strony</a></li>
+          <li><a href = "http://iem.pw.edu.pl/~czapskid/main.css">Kod CSS</a></li>
+          <li><a href = "http://iem.pw.edu.pl/~czapskid/projekt2/skrypt2.js">Kod JavaScript</a></li>
+         </ul>
+      </div>
+
+
+         <div id = "tresc">
+            <h1>Zadanie 2 - formularz</h1>
+            Uzupełnij poniższe pola zgodnie z prawdą. Aby przesłać wypełnione dane, naciśnij przycisk "Wyślij". Po naciśnięciu przycisku zobaczysz na dole komunikat informujący o poprawności lub nie poprawności wymienionych  danych. Pole oznaczone gwiazdką jest polem obowiązkowym. <br><br>
+            <script src="skrypt2.js"></script> 
+
+            <table id="formularz">
+                <tr>
+                    <td>Imię (*)</td>
+                    <td>
+                        <input type="text" name="Imie" onkeypress="return filtrLiter(event);" id="formularzImie">
+                    </td>
+                </tr><tr>
+                    <td>Nazwisko (*)</td>        
+                    <td>
+                        <input type="text" name="Nazwisko" onkeypress="return filtrLiter(event);" id="formularzNazwisko">
+                    </td>
+                </tr><tr>
+                    <td>Data urodzenia </td>
+                    <td>
+                        <input onchange="obliczWiek()" onkeyup="obliczWiek()" type="date" id="formularzKalendarz" >
+                    </td>
+                </tr><tr>
+                    <td>PESEL (*)</td>
+                    <td>
+                        <input type="text" name="PESEL" onkeypress="return filtrCyfr(event)" id="formularzPESEL">
+                    </td>
+                </tr><tr>
+                    <td>Wiek</td>
+                    <td>
+                        <input type="text" name="Wiek" id="formularzWiek" disabled>
+                    </td>
+                </tr><tr>
+                    <td>Płeć (*)</td>
+                    <td>
+                        <select name="Plec" id="formularzMenu">
+                            <option value="kobieta">Kobieta</option>
+                            <option value="mezczyzna">Mężczyzna</option>
+                        </select>
+                    </td>
+                </tr><tr>
+                    <td>Kierunek studiów</td>
+                    <td>
+                        <fieldset id="formularzWybor">
+                            <legend id = "kierunekTytul">Zaznacz kierunek</legend>
+                            <input type="radio" value="Informatyka" name="kierunek" checked="checked"/> Informatyka
+                            <input type="radio" value="Elektrotechnika" name="kierunek"/> Elektrotechnika
+                            <input type="radio" value="Automatyka i Robotyka" name="kierunek"/> Automatyka i Robotyka
+                        </fieldset>
+                    </td>
+                </tr><tr>
+                    <td><br>Obrazek (*)</td>
+                    <td><br>
+                        <INPUT TYPE="file" id="formularzPlik" name="file" accept=".jpg,.tif,.png,.jpeg,.gif" >
+                    </td>
+                </tr><tr>
+                    <td>Komentarz</td>
+                    <td>
+                        <br><TEXTAREA id="formularzKom" onkeyup="liczZnaki()"></TEXTAREA><br>
+                    </td>
+                </tr><tr>
+                    <td>Liczba znaków</td>
+                    <td>
+                        <input id="formularzLiczba" type=text readonly name="LimitZnakow" value="0">
+                    </td>
+                </tr><tr>
+                    <td>Zgoda na przetwarzanie danych<br>(*)</td>
+                    <td>
+                        <input type="checkbox" name="Przetwarzanie" id="formularzCheck" value = "tak"> Wyrażam zgodę
+                    </td>
+                </tr><tr>
+                    <td colspan="2" ><br><div id = "formularzHehe"><input type="button" value="Wyślij" onclick="sprawdzWyslij()" id="formularzPrzyc"></div></td>
+                </tr><tr>
+                    <td colspan="2" ><br><div id="formularzOK"></div><br></td>
+                </tr>
+             </table>
+
+            <div id = "zad2Napis">
+               Programowanie Internetowe.
+            </div>
+         </div>
+
+
+
+        <div id = "stopka">
+            Autorem strony jest Damian Czapski.
+         </div>
+
+
+         </div>
+
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Poprawny CSS!" />
+          </a>
+
+         <a href="http://validator.w3.org/check?uri=referer">
+                  <img src="http://dev.bowdenweb.com/a/i/dev/webcomm/badge-w3c-valid-html5.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+               </a>
+      </body>
+</html>

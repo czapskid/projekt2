@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../main.css">
+      <meta name="description" content="Strona ">
+      <meta name="keywords" content="cv, damian, czapski, projekt, programowanie, internetowe">
+      <meta name="author" content="&copy;2016 Damian Czapski">
+      <meta name="copyright" content="(c) 2016 czapskid">
+      <meta name="reply-to"  content="czapskid@ee.pw.edu.pl">
+       <script src="skrypt1.js"></script>
+      <title>Damian Czapski - Programowanie Internetowe</title>
+   </head>
+      
+      
+   <body>
+   		<div id = "caly_blok">
+        <div id = "naglowek">
+            Programowanie Internetowe<br>
+            Projekt nr. 2 - część 1.
+         </div>
+
+
+      <div id = "spis_tresci"><ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../o_mnie.html">O mnie</a></li>
+                     <li><a href="../projekt1.html">Projekt 1</a>
+                     <li><a href="../projekt2.html">Projekt 2</a>
+                        <ul>
+                           <li><a href="zad1.html">ZADANIE 1</a></li>
+                           <li><a href="zad2.html">ZADANIE 2</a></li>
+                        </ul></li>
+                     <li>Projekt 3</li>
+                     <li>Projekt 4</li>
+                     <li>Projekt 5</li>
+          <li><a href = "view-source:http://iem.pw.edu.pl/~czapskid/projekt2/zad1.html">Źródło strony</a></li>
+          <li><a href = "http://iem.pw.edu.pl/~czapskid/main.css">Kod CSS</a></li>
+          <li><a href = "http://iem.pw.edu.pl/~czapskid/projekt2/skrypt1.js">Kod JavaScript</a></li>
+         </ul></div>
+
+
+         <div id = "tresc">
+            <h1>Generowanie tabeli</h1>
+            Uzupełnij poniższe pole liczbą studentów,których chcesz wygenerować a następnie naciśnij przycisk "Generuj".<br>
+            Zobaczysz wygenerowaną tabelę z numerem, imieniem i nazwiskiem danego studenta. Możesz dodać swoją kolumnę po naciśnięciu na przycisk "Dodaj".
+            Powodzenia!<br><br>
+             
+             
+
+             <div id="generowanieTabeli">
+                 <div id="genButtonWrap">
+                     Podaj ilość wierszy: <input onchange="aktualizujLiczbeWierszy()" id="liczbaWierszy" value="1" type="number" min="0" step="1" />
+                     <button id="generujTabeleButton" onclick="generujTabele()">Wygeneruj tabelę</button>
+                 </div>
+                 <br>
+                 <div id="tabWrapper">
+                     <table id="generowanaTabelaWraper">
+                         <tbody id="generowanaTabela"></tbody>
+                     </table>
+                 </div>
+             </div>
+             
+             
+
+            <div id = "zad2Napis">
+               Programowanie Internetowe.
+            </div>
+
+         </div>
+
+
+
+       <div id = "stopka">
+            Autorem strony jest Damian Czapski.
+         </div>
+
+
+         </div>
+
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss"
+                  alt="Poprawny CSS!" />
+          </a>
+
+         <a href="http://validator.w3.org/check?uri=referer">
+                  <img src="http://dev.bowdenweb.com/a/i/dev/webcomm/badge-w3c-valid-html5.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+               </a>
+      </body>
+</html>
